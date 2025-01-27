@@ -9,6 +9,9 @@ table, th, td {
     letter-spacing: 1px;
     color: #ffffff;
   }
+  .textonocentro{
+    text-align: center;
+  }
 
 /*
 table {
