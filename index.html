@@ -1,106 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela de códigos de enquadramentos das infrações</title>
-    <meta name="Tabela de códigos de enquadramentos das infrações" content="tabela, infrações">
-    <link rel="icon" href="imagens/">
+    <title>Tabela de Códigos de Enquadramentos das Infrações - TCEI</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.2.2/af-2.7.0/datatables.min.css" rel="stylesheet">
+    <script src="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.2.2/af-2.7.0/datatables.min.js"></script>
 </head>
 <body>
-<header>
-    <section>
-        <h1>Tabela de códigos de enquadramentos das infrações</h1>
-    </section>
-</header>
-<main>
-    <section>
-        <table>
-            <tr>
-                <th scope="col" class="textonocentro">Nº</th>
-                <th scope="col" class="textonocentro">Código da Infração</th>
-                <th scope="col" class="textonocentro">Desdobramento</th>
-                <th scope="col" class="textonocentro">Descrição da Infração</th>
-                <th scope="col" class="textonocentro">Exemplos do campo de observações do AIT:</th>
-                <th scope="col" class="textonocentro">Amparo Legal (CTB)</th>
-                <th scope="col" class="textonocentro">Infrator</th>
-                <th scope="col" class="textonocentro">Pontos na CNH</th>
-                <th scope="col" class="textonocentro">Gravidade</th>
-                <th scope="col" class="textonocentro">Fator multiplicador</th>
-                <th scope="col" class="textonocentro">Órgão Competente</th>
-                <th scope="col" class="textonocentro">Constatação da Infração</th>
-                <th scope="col" class="textonocentro">Medida administrativa</th>
-                <th scope="col" class="textonocentro">Pode configurar crime de trânsito</th>
-            </tr>
-            <tr>
-                <td class="textonocentro">1</td><!--Nº-->
-                <td>5002</td><!--Código da Infração-->
-                <td class="textonocentro">0</td><!--Desdobramento-->
-                <td>Multa, por não identificação do condutor infrator, imposta à pessoa jurídica </td><!--Descrição da Infração-->
-                <td>-</td><!--Exemplos do campo de observações do AIT:-->
-                <td>257, § 8º</td><!--Amparo Legal (CTB)-->
-                <td>Proprietário</td><!--Infrator-->
-                <td class="textonocentro">-</td><!--Pontos na CNH-->
-                <td class="textonocentro">-</td><!--Gravidade-->
-                <td class="textonocentro">-</td><!--Fator multiplicador-->
-                <td>E/M/R</td><!--Órgão Competente-->
-                <td>-</td><!--Constatação da Infração-->
-                <td>-</td><!--Medida administrativa-->
-                <td class="textonocentro">-</td><!--Pode configurar crime de trânsito-->
-            </tr>    
-        </table>    
-    </section>    
-</main>
-<footer>
-
-</footer>   
-</body> 
-</html>
-
-<!--
-<section>
-    <h2>Front-end web developer course 2021</h2>
-    <table>
-        <caption>
-          Front-end web developer course 2021
-        </caption>
+    <header>
+      <h6>PREFEITURA MUNICIPAL DE VITÓRIA</h6>
+      <h6>SECRETARIA MUNICIPAL DE SEGURANÇA URBANA</h6>
+      <h6>GUARDA CIVIL MUNICIPAL DE VITÓRIA</h6>
+      <h6>GERÊNCIA DA CENTRAL INTEGRADA DE OPERAÇÕES E MONITORAMENTO</h6>
+      <h6>COORDENAÇÃO DE OPERAÇÕES DE PREVENÇÃO E MONITORAMENTO</h6>
+      <h6>DEPARTAMENTO DE VIDEOMONITORAMENTO</h6>
+    </header>
+    <h1>Tabela de Códigos de Enquadramentos das Infrações - TCEI</h1>
+    <table id="infracoesTable" class="display">
         <thead>
-          <tr>
-            <th scope="col">Person</th>
-            <th scope="col">Most interest in</th>
-            <th scope="col">Age</th>
-          </tr>
+            <tr>
+                <th>Nº</th>
+                <th>Código da Infração</th>
+                <th>Desdobramento</th>
+                <th>Descrição da Infração</th>
+                <th>Exemplos do campo de observações do AIT</th>
+                <th>Amparo Legal (CTB)</th>
+                <th>Infrator</th>
+                <th>Pontos na CNH</th>
+                <th>Gravidade</th>
+                <th>Fator multiplicador</th>
+                <th>Órgão Competente</th>
+                <th>Constatação da Infração</th>
+                <th>Medida administrativa</th>
+                <th>Pode configurar crime de trânsito</th>
+            </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">Chris</th>
-            <td>HTML tables</td>
-            <td>22</td>
-          </tr>
-          <tr>
-            <th scope="row">Dennis</th>
-            <td>Web accessibility</td>
-            <td>45</td>
-          </tr>
-          <tr>
-            <th scope="row">Sarah</th>
-            <td>JavaScript frameworks</td>
-            <td>29</td>
-          </tr>
-          <tr>
-            <th scope="row">Karen</th>
-            <td>Web performance</td>
-            <td>36</td>
-          </tr>
+            <!-- Exemplo de dados -->
+            <tr>
+                <td>1</td>
+                <td>601</td>
+                <td>1</td>
+                <td>Dirigir veículo sem possuir CNH</td>
+                <td>Motorista sem CNH</td>
+                <td>Art. 162, CTB</td>
+                <td>Condutor</td>
+                <td>7</td>
+                <td>Grave</td>
+                <td>3</td>
+                <td>Detran</td>
+                <td>Autuação</td>
+                <td>Multa</td>
+                <td>Sim</td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
         </tbody>
-        <tfoot>
-          <tr>
-            <th scope="row" colspan="2">Average age</th>
-            <td>33</td>
-          </tr>
-        </tfoot>
-      </table> 
-</section>
--->
+    </table>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

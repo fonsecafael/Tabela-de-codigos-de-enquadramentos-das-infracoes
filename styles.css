@@ -1,63 +1,42 @@
-body{
-    background-color:#000000;  
+body {
+  background-color: #fff;
+  color: #000000;
+  font-family: Arial, sans-serif;
 }
-h1{
-  color:#ffffff;
-  font-family: Arial;
-  text-align: center;
-}
-table, th, td {
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: Arial;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    background-color:#808080; 
-    color: #ffffff;
-  }
-  .textonocentro{
-    text-align: center;
-  }
 
-/*
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #000
+}
+
+h6{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 table {
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: Arial;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-  }
-  
-  caption {
-    caption-side: bottom;
-    padding: 10px;
-    font-weight: bold;
-  }
-  
-  thead,
-  tfoot {
-    background-color: rgb(228 240 245);
-  }
-  
-  th,
-  td {
-    border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
-  }
-  
-  td:last-of-type {
-    text-align: center;
-  }
-  
-  tbody > tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
-  }
-  
-  tfoot th {
-    text-align: right;
-  }
-  
-  tfoot td {
-    font-weight: bold;
-  }  
-*/    
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #444;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #000;
+}
+
+tr:hover {
+  background-color: #000;
+}
